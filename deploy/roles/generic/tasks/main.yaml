@@ -1,0 +1,18 @@
+---
+- name: Prepare all dependencies
+  debug: msg="1"
+
+- name: Stop old version
+  debug: msg="2"
+
+- name: Delete old version
+  debug: msg="3"
+
+- name: Copy new version to destination
+  debug: msg="4"
+
+- name: Start application
+  debug: msg="5"
+
+- name: Test if application is running
+  debug: msg="6"

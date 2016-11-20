@@ -1,0 +1,7 @@
+---
+- hosts: "pipeline"
+  vars_files:
+    - "inventories/{{env}}/group_vars/pipeline.yml"
+#    - "inventories/{{env}}/group_vars/secrets.yml"
+  roles:
+    - role: generic

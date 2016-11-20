@@ -13,5 +13,10 @@ node {
     stage 'Build'
     sh "${mvnHome}/bin/mvn -B clean install"
 
+    stage 'Deploy'
+    sh "ansible-playbook -i inventories/test/hosts deploy.yml --extra-vars=\"env=test\""
+
+    stage 'Test'
+    sh "ansible-playbook -i inventories/test/hosts test.yml --extra-vars=\"env=test\""
 
 }

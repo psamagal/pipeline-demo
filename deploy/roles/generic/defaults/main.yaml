@@ -1,0 +1,13 @@
+---
+#
+# defaults
+#
+
+java_version: 8
+java_build: 14
+java_subversion: 102
+java_checksum: bac58dcec9bb85859810a2a6acba740b
+java_download_path: /tmp
+java_download_from_oracle: true
+java_remove_download: true
+java_set_javahome: false
